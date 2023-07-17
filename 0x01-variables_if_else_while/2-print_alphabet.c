@@ -1,20 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-/*
- * main - function prints alphabet in lowercase
- * putchar - function that prints 
- * Return: success
+/**
+ * main - initialization of character
+ * Description: putchar to print alphabet
+ * Return:0 succession
  */
+int main(void)
+{
+	int A;
 
-int main(){
-
-	int m;
-	for (m = 97 ; m <= 122; m++)
+	for (A = 97; A <= 122; A++)
 	{
-		putchar(m);
+		putchar(A);
 	}
 	putchar('\n');
-
-	return(0);
+	return (0);
 }
