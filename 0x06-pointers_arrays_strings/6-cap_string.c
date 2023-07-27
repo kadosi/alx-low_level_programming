@@ -24,7 +24,7 @@ char *cap_string(char *s)
 		|| s[i - 1] == '{' || s[i - 1] == '}'
 		|| s[i - 1] == '.')
 			{
-				s[i + 1] = toupper(s[i + 1]);
+				s[i] = toupper(s[i]);
 			}
 		}
 		i++;
