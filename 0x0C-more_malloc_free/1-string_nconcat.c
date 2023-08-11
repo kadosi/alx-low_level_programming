@@ -28,9 +28,14 @@ char *concatenated = malloc((concatLen + 1) * sizeof(char));
 	{
 		return (NULL);
 	}
-	strcpy(concatenated, s1);
-	strncat(concatenated, s2, n);
-
+	if (s1 != NULL)
+	{
+		strcpy(concatenated, s1);
+	}
+	if (s2 != NULL)
+	{
+		strncat(concatenated, s2, n);
+	}
 	concatenated[concatLen] = '\0';
 
 	return (concatenated);
