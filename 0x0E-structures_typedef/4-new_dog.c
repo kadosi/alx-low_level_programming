@@ -9,12 +9,14 @@
  * @age: The age of the dog.
  * @owner: The owner of the dog.
  *
- * Return: A pointer to the newly created dog_t structure, or NULL if memory allocation fails.
+ * Return: A pointer to the newly created dog_t structure,
+ * or NULL if memory allocation fails.
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog = (dog_t *)malloc(sizeof(dog_t));
+
 	if (new_dog == NULL)
 	{
 		return (NULL);
