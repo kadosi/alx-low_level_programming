@@ -1,4 +1,1 @@
-
-Function Pointer in C
-Pointers to functions
-Function Pointers in C / C++
+0x0F-function_pointers
